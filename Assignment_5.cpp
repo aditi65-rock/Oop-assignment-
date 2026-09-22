@@ -6,31 +6,31 @@ class Student
 {
 public:
     string name;
-    int age;
+    int rollNo;
     string course;
 
-    void setDetails(string name, int age, string course)
+    void setDetails(string name, int rollNo, string course)
     {
         this->name = name;
-        this->age = age;
+        this->rollNo = rollNo;
         this->course = course;
     }
 
     void display()
     {
         cout << "Student Name: " << name << endl;
-        cout << "Age: " << age << endl;
+        cout << "Roll Number: " << rollNo << endl;
         cout << "Course: " << course << endl;
     }
 };
 
 int main()
 {
-    Student s;
+    Student student;
 
-    s.setDetails("Aditi", 18, "AIML");
+    student.setDetails("Aditi", 48, "AIML");
 
-    s.display();
+    student.display();
 
     return 0;
 }
