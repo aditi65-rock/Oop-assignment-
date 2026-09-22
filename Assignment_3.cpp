@@ -1,26 +1,21 @@
-include <iostream>
+#include <iostream>
 #include <string>
 using namespace std;
 
 class Employee
 {
 public:
-    string name;
-    int age;
-    float salary;
-
-    void setDetails(string n, int a, float s)
-    {
-        name = n;
-        age = a;
-        salary = s;
-    }
+    string employeeName;
+    int employeeCode;
+    string jobRole;
+    double monthlySalary;
 
     void display()
     {
-        cout << "Employee Name: " << name << endl;
-        cout << "Age: " << age << endl;
-        cout << "Salary: " << salary << endl;
+        cout << "Employee Name: " << employeeName << endl;
+        cout << "Employee Code: " << employeeCode << endl;
+        cout << "Job Role: " << jobRole << endl;
+        cout << "Monthly Salary: " << monthlySalary << endl;
     }
 };
 
@@ -28,6 +23,12 @@ int main()
 {
     Employee e;
 
-    e.setDetails("Aditi", 18, 50000);
+    e.employeeName = "Aditi";
+    e.employeeCode = 205;
+    e.jobRole = "Software Developer";
+    e.monthlySalary = 55000;
 
-    e.display
+    e.display();
+
+    return 0;
+}
