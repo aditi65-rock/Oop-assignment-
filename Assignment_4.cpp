@@ -5,49 +5,45 @@ using namespace std;
 class Book
 {
 public:
-    string name;
-    string writer;
-    int cost;
+    string title;
+    string author;
+    int price;
 
-    // Default Constructor
+    // Default constructor
     Book()
     {
-        name = "Unknown";
-        writer = "Unknown";
-        cost = 0;
+        title = "Unknown";
+        author = "Unknown";
+        price = 0;
     }
 
-    // Parameterized Constructor
-    Book(string n, string w, int c)
+    // Parameterized constructor
+    Book(string t, string a, int p)
     {
-        name = n;
-        writer = w;
-        cost = c;
+        title = t;
+        author = a;
+        price = p;
     }
 
-    void show()
+    void display()
     {
-        cout << "Book Name: " << name << endl;
-        cout << "Writer: " << writer << endl;
-        cout << "Cost: " << cost << endl;
+        cout << "Book Title: " << title << endl;
+        cout << "Author: " << author << endl;
+        cout << "Price: " << price << endl;
     }
 };
 
 int main()
 {
-    // Object using Default Constructor
-    Book b1;
+    Book book1;
 
-    cout << "Book 1:" << endl;
-    b1.show();
+    Book book2("Wings of Fire", "A.P.J. Abdul Kalam", 400);
 
-    cout << endl;
+    cout << "First Book Details:" << endl;
+    book1.display();
 
-    // Object using Parameterized Constructor
-    Book b2("Harry Potter", "J.K. Rowling", 500);
-
-    cout << "Book 2:" << endl;
-    b2.show();
+    cout << "\nSecond Book Details:" << endl;
+    book2.display();
 
     return 0;
 }
