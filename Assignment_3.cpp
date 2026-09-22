@@ -1,4 +1,4 @@
-#include <iostream>
+include <iostream>
 #include <string>
 using namespace std;
 
@@ -30,7 +30,4 @@ int main()
 
     e.setDetails("Aditi", 18, 50000);
 
-    e.display();
-
-    return 0;
-}
+    e.display
